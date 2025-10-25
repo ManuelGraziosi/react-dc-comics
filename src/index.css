@@ -1,0 +1,9 @@
+.footer-bg {
+    background-image: url(./img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+
+    /* debug */
+    /* min-height: 200px; */
+}
