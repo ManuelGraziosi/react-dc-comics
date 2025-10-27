@@ -5,9 +5,8 @@ function Grid() {
     return (
         <>
             <div className="row">
-                <div class="card-group">
+                <div className="card-group">
                     {comicsCardArrayJSX(comics)}
-
                 </div>
             </div>
         </>

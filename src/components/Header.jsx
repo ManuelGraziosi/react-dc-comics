@@ -27,7 +27,7 @@ function Header() {
 
 function navElemArrayJSX(array) {
 
-    return array.map((curElem) => <li><a className="link-underline link-underline-opacity-0" href={`/${curElem}`}>{curElem}</a></li>)
+    return array.map((curElem, index) => <li key={index}><a className="link-underline link-underline-opacity-0" href={`/${curElem}`}>{curElem}</a></li>)
 
 }
 export default Header;
