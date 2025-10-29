@@ -1,13 +1,10 @@
-import comics from "../comics";
 import Card from "./Card";
 
 function Grid() {
     return (
         <>
             <div className="row">
-                <div className="card-group">
-                    {comicsCardArrayJSX(comics)}
-                </div>
+                {comicsCardArrayJSX(comics)}
             </div>
         </>
     )
@@ -15,6 +12,6 @@ function Grid() {
 }
 
 function comicsCardArrayJSX(comicsArray) {
-    return comicsArray.map((curComic) => Card(curComic))
+    return comicsArray.map((curComic) => <Card key={curComic.id} comic={curComic}></Card>)
 }
 export default Grid;

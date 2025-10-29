@@ -6,7 +6,7 @@ function Main() {
             <main className="bg-dark text-light py-5">
                 <div className="container">
                     {/* <h1>----Content goes here----</h1> */}
-                    <Grid />
+                    {/* <Grid /> */}
                 </div>
             </main>
         </>
