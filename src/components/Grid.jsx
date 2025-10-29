@@ -1,6 +1,7 @@
 import Card from "./Card";
 
-function Grid() {
+function Grid({ comicsList }) {
+    const comics = comicsList;
     return (
         <>
             <div className="row">

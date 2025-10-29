@@ -1,12 +1,13 @@
 import Grid from "./Grid";
 
-function Main() {
+function Main({ comicsList }) {
+    const comics = comicsList;
     return (
         <>
             <main className="bg-dark text-light py-5">
                 <div className="container">
                     {/* <h1>----Content goes here----</h1> */}
-                    {/* <Grid /> */}
+                    <Grid comicsList={comics} />
                 </div>
             </main>
         </>
