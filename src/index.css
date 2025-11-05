@@ -1,9 +1,6 @@
-.footer-bg {
-    background-image: url(./img/footer-bg.jpg);
+.jumbo {
+    background-image: url(./assets/img/jumbotron.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100%;
-
-    /* debug */
-    /* min-height: 200px; */
+    height: calc(0.2 * 100vw);
 }

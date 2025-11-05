@@ -1,18 +1,25 @@
 import Card from "./Card";
 
-function Grid({ comicsList }) {
-    const comics = comicsList;
+function Grid({ comicsArray }) {
+    console.log(comicsArray);
+
     return (
         <>
-            <div className="row">
-                {comicsCardArrayJSX(comics)}
+            <div className="container">
+                <h2>Current Series</h2>
+                <div className="row row-cols-1 row-cols-md-3 row-cols-lg-6">
+                    {
+                        comicsArray.map((curComic) => (
+                            <div key={curComic.id} className="col">
+                                <Card comic={curComic} />
+                            </div>)
+                        )
+                    }
+                </div>
             </div>
         </>
     )
 
 }
 
-function comicsCardArrayJSX(comicsArray) {
-    return comicsArray.map((curComic) => <Card key={curComic.id} comic={curComic}></Card>)
-}
 export default Grid;

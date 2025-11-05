@@ -1,14 +1,16 @@
+import HeroBanner from "./HeroBanner";
 import Grid from "./Grid";
+import IconsList from "./IconsList";
 
-function Main({ comicsList }) {
+function Main({ comicsList, iconsArray }) {
     const comics = comicsList;
+    const shopLinks = iconsArray;
     return (
         <>
-            <main className="bg-dark text-light py-5">
-                <div className="container">
-                    {/* <h1>----Content goes here----</h1> */}
-                    <Grid comicsList={comics} />
-                </div>
+            <main className="">
+                <HeroBanner />
+                <Grid comicsArray={comics} />
+                <IconsList iconsArray={shopLinks} />
             </main>
         </>
     )
